@@ -264,12 +264,19 @@
         }
 
         @media (max-width: 768px) {
-            :root { --pad: 30px; }
-            .content-container { margin: 380px 20px 40px; padding: 40px var(--pad); }
-            .menu { display: none; }
-            h1 { font-size: 32px; }
-            .watermark { font-size: 300px; }
-            .flip-back { padding: 28px 28px; }
+    :root { --pad: 20px; }
+    .content-container {
+        max-width: 100%;
+        margin: 380px 0 40px;
+        padding: 40px var(--pad);
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .menu { display: none; }
+    h1 { font-size: 32px; }
+    .watermark { font-size: 300px; }
+    .flip-back { padding: 28px 28px; }
+
         }
     </style>
 </head>
